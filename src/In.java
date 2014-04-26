@@ -73,6 +73,8 @@ class In {
    }
 
    // for files and web pages
+
+   //The constructor that is used in BisonMaps
    public In(String s) {
 
       try {
@@ -82,7 +84,7 @@ class In {
          if (file.exists()) {
              FileReader fr = new FileReader(s);
              br = new BufferedReader(fr);
-         }
+         }//Checks to see what is read is an existing file
 
          // next try for files included in jar
          URL url = getClass().getResource(s);
